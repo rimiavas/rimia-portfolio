@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<!-- Mirrored from rvas001.myportfolio.com/paint-brush-program by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:45:17 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description"  content="An interactive paint program allowing users to draw with different brush modes implemented in C++ and openFrameworks." />
+      <meta name="twitter:card"  content="summary_large_image" />
+      <meta name="twitter:site"  content="@AdobePortfolio" />
+      <meta  property="og:title" content="Rimia Vas - Paint brush program" />
+      <meta  property="og:description" content="An interactive paint program allowing users to draw with different brush modes implemented in C++ and openFrameworks." />
+      <meta  property="og:image" content="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/95b7e5fb-26d0-4cb1-9418-40025b670476_car_4x37c6d.png?h=e686f9ca99a59299ec6a3005663daad0" />
+      <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURUxpcU3H2DoAAAABdFJOUwBA5thmAAAADElEQVQI12NgIA0AAAAwAAHHqoWOAAAAAElFTkSuQmCC"  />
+      <link rel="stylesheet" href="dist/css/main.css" type="text/css" />
+      <link rel="stylesheet" href="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/717829a48b5fad64747b7bf2f577ae731734365434a24e.css?h=0e7cd764762ab797f537b40f4d7b6dad" type="text/css" />
+    <link rel="canonical" href="paint-brush-program.html" />
+      <title>Rimia Vas - Paint brush program</title>
+    <script type="text/javascript" src="../use.typekit.net/ik/1QUlp7ULineXprS5ToWT-ZRxef5kr9YsDVtSmdoLRVXfe1SJGLGmIKvDFQqawQFL52b3wRgRZRmR52ZKjAjUF2qojAIu529kFQFR5QJk52quZA4cZQwUFgGMJ6sKdAukJ6s1dAoaH6GJX-b2IMMjgkMfH6qJyMIbMs6IJMJ7?cb=f55b45a3e8ad93d0a224939951d8339444a0d5cb" async onload="
+    try {
+      window.Typekit.load();
+    } catch (e) {
+      console.warn('Typekit not loaded.');
+    }
+    "></script>
+</head>
+  <body class="transition-enabled">  <div class='page-background-video page-background-video-with-panel'>
+  </div>
+  <div class="js-responsive-nav">
+    <div class="responsive-nav has-social">
+      <div class="responsive-nav__contents">
+        <div class="close-responsive-click-area js-close-responsive-nav">
+          <div class="close-responsive-button"></div>
+        </div>
+            <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+                <div class="gallery-title"><a href="work.html" >About me</a></div>
+                <div class="gallery-title"><a href="c.html" >C++</a></div>
+                <div class="gallery-title"><a href="uxui-1.html" >UX/UI</a></div>
+                <div class="gallery-title"><a href="javascript.html" >JavaScript</a></div>
+                <div class="gallery-title"><a href="other-languagesprojects.html" >Other languages/projects</a></div>
+      <div class="page-title">
+        <a href="contact.html" >Contact</a>
+      </div>
+            </nav>
+          <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+            <ul>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="site-wrap cfix">
+    <div class="site-container">
+      <div class="site-content e2e-site-content">
+          <header class="site-header js-site-header " data-context="theme.nav" data-hover-hint="nav" data-hover-hint-placement="top-start">
+              <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+                <div class="gallery-title"><a href="work.html" >About me</a></div>
+                <div class="gallery-title"><a href="c.html" >C++</a></div>
+                <div class="gallery-title"><a href="uxui-1.html" >UX/UI</a></div>
+                <div class="gallery-title"><a href="javascript.html" >JavaScript</a></div>
+                <div class="gallery-title"><a href="other-languagesprojects.html" >Other languages/projects</a></div>
+      <div class="page-title">
+        <a href="contact.html" >Contact</a>
+      </div>
+              </nav>
+              <div class="logo-wrap" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
+                <div class="logo e2e-site-logo-text logo-text  ">
+                    <a href="work.html" class="preserve-whitespace">Rimia Vas</a>
+
+                </div>
+              </div>
+              <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+                <ul>
+                </ul>
+              </div>
+              <div class="hamburger-click-area js-hamburger">
+                <div class="hamburger">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
+              </div>
+          </header>
+        <main>
+  <div class="page-container js-site-wrap" data-context="page.page.container" data-hover-hint="pageContainer">
+    <section class="page standard-modules">
+        <header class="page-header content" data-context="pages" data-identity="id:p65d4ce73b089f4ba0846a57c70ebe071846b029bcf9fd09fcf63c" data-hover-hint="pageHeader" data-hover-hint-id="p65d4ce73b089f4ba0846a57c70ebe071846b029bcf9fd09fcf63c">
+            <h1 class="title preserve-whitespace e2e-site-logo-text">Paint brush program</h1>
+            <p class="description">An interactive paint program allowing users to draw with different brush modes implemented in C++ and openFrameworks.</p>
+        </header>
+      <div class="page-content js-page-content" data-context="pages" data-identity="id:p65d4ce73b089f4ba0846a57c70ebe071846b029bcf9fd09fcf63c">
+        <div id="project-canvas" class="js-project-modules modules content">
+          <div id="project-modules">
+              
+              
+              
+              
+              
+              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div>This project demonstrates my skills in graphics programming using C++ and open Frameworks. Key features include: Multiple brush modes: basic brush, eraser, dynamic brush, rectangle brush. Ability to change brush colour. Drawing is rendered to an FBO for performance. Dynamic brush transforms based on speed and direction. Uses mouse events and interactions to enable painting</div><div><br></div><div>I utilised open Frameworks for easy setup of the window and OpenGL context. The main logic is handled in C++ code across ofApp.h/cpp. An FBO is allocated to act as the canvas and is cleared each frame. Different brush modes are implemented as functions that draw primitives. Mouse events toggle painting on/off and pass position to brushes. Key presses cycle through different brush modes. Vector math is used to calculate speed and direction for the dynamic brush.</div><div><br></div><div>This project strengthened my C++ abilities along with skills in interactive graphics, UI/UX design, and implementing physics-based effects. The end result is an extensible paint program with a responsive and intuitive feel.</div><div>View Code [<a href="https://github.com/rimiavas/paint-program" target="_blank">Link to GitHub repository</a>]</div></div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              <div class="project-module module video project-module-video js-js-project-module" style="padding-top: px;
+padding-bottom: px;
+  width: 65%;
+">
+    <div class="embed-dimensions" style="max-width: 960px; max-height: 720px; margin: 0 auto;">
+    <div class="embed-aspect-ratio" style="padding-bottom: 75%; position: relative; height: 0px;">
+        <iframe title="Video Player" class="embed-content" src="https://www-ccv.adobe.io/v1/player/ccv/RBd_9wVbDIa/embed?bgcolor=%23191919&amp;lazyLoading=true&amp;api_key=BehancePro2View" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+    </div>
+
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+          </div>
+        </div>
+      </div>
+    </section>
+          <section class="other-projects" data-context="page.page.other_pages" data-hover-hint="otherPages">
+            <div class="title-wrapper">
+              <div class="title-container">
+                  <h3 class="other-projects-title preserve-whitespace">You may also like</h3>
+              </div>
+            </div>
+            <div class="project-covers">
+                  <a class="project-cover js-project-cover-touch hold-space" href="audio-visualiser.html" data-context="pages" data-identity="id:p65d4cfe538624ea1c854f314f36b41c149c33060aae9b661c759f">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/40eac53f-104d-4274-9901-041de016f1d6_rwc_328x151x694x521x320fb6.png?h=4124a94d3a33f6af19eb8642c9ad9adf"
+              data-src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/40eac53f-104d-4274-9901-041de016f1d6_rwc_328x151x694x521x694dda2.png?h=49c686a221947ed77c8241812584310f"
+              data-srcset="https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/40eac53f-104d-4274-9901-041de016f1d6_rwc_328x151x694x521x640.png?h=7931aa36f87d337263175b90fc054cec 640w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/40eac53f-104d-4274-9901-041de016f1d6_rwc_328x151x694x521x694.png?h=49c686a221947ed77c8241812584310f 1280w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/40eac53f-104d-4274-9901-041de016f1d6_rwc_328x151x694x521x694.png?h=49c686a221947ed77c8241812584310f 1366w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/40eac53f-104d-4274-9901-041de016f1d6_rwc_328x151x694x521x694.png?h=49c686a221947ed77c8241812584310f 1920w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/40eac53f-104d-4274-9901-041de016f1d6_rwc_328x151x694x521x694.png?h=49c686a221947ed77c8241812584310f 2560w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/40eac53f-104d-4274-9901-041de016f1d6_rwc_328x151x694x521x694.png?h=49c686a221947ed77c8241812584310f 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">Audio visualiser</div>
+                            <div class="date">2024</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="c-logo.html" data-context="pages" data-identity="id:p65d4c0412372857692640416ba311f8afcbafc0382b02232d99c1">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/84a0a64f-ec45-4ea5-93a0-ffc49b43d0c1_carw_4x3x32770f.png?h=ebb94799b3c0c45cbbfe6e42dbcd1d44"
+              data-src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/84a0a64f-ec45-4ea5-93a0-ffc49b43d0c1_car_4x32ac5.png?h=567dcad52bbd87cdc99b5795bdb40425"
+              data-srcset="https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/84a0a64f-ec45-4ea5-93a0-ffc49b43d0c1_carw_4x3x640.png?h=b4741a4835f161a873d89ebed71f5eaa 640w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/84a0a64f-ec45-4ea5-93a0-ffc49b43d0c1_carw_4x3x1280.png?h=8293becfbc03034b49c4b3d607037dfd 1280w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/84a0a64f-ec45-4ea5-93a0-ffc49b43d0c1_carw_4x3x1366.png?h=789893a4f99b6202feb667552375c66f 1366w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/84a0a64f-ec45-4ea5-93a0-ffc49b43d0c1_carw_4x3x1920.png?h=9cca613fe0345bc71b813a71e93baac3 1920w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/84a0a64f-ec45-4ea5-93a0-ffc49b43d0c1_carw_4x3x2560.png?h=13f05ecebe73ba6088eb485563b13c07 2560w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/84a0a64f-ec45-4ea5-93a0-ffc49b43d0c1_carw_4x3x5120.png?h=6a8d3fd652e268cb082381ea9b28a9e3 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">C++ logo</div>
+                            <div class="date">2023</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="working-with-3d-c.html" data-context="pages" data-identity="id:p65d4d2d672c85996317adfb8a774538da69e2573c356a1257284d">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/52f2afbc-15c2-48a6-ad42-891576771929_carw_4x3x32b687.png?h=ce71c88825aeaceb9fb4e9ce283cc234"
+              data-src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/52f2afbc-15c2-48a6-ad42-891576771929_car_4x3ce3b.png?h=9afe1bd322768e394f9ff402333de74e"
+              data-srcset="https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/52f2afbc-15c2-48a6-ad42-891576771929_carw_4x3x640.png?h=000c716cb83cdd20eaa59f72509ae547 640w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/52f2afbc-15c2-48a6-ad42-891576771929_carw_4x3x1280.png?h=8b8bb4a19def9d36ef0048899663071e 1280w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/52f2afbc-15c2-48a6-ad42-891576771929_carw_4x3x1366.png?h=40b54c747af44ba98bcf66f68c43c1ea 1366w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/52f2afbc-15c2-48a6-ad42-891576771929_carw_4x3x1920.png?h=3f9c092d6681fb7e64f31d12999b49a7 1920w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/52f2afbc-15c2-48a6-ad42-891576771929_carw_4x3x2560.png?h=31dc695ab25b0c274051ec15e29c66e1 2560w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/52f2afbc-15c2-48a6-ad42-891576771929_carw_4x3x5120.png?h=7b868c5676759076f2dd3baea6fff77d 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">Working with 3D (c++)</div>
+                            <div class="date">2024</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="woking-with-audio-and-gui-c.html" data-context="pages" data-identity="id:p65d4d3c59e3058eadefa190484bedc6bdc20a51700449fd40c568">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/891bdd05-ebf2-4feb-9867-896ca9b021d4_carw_4x3x32c0b7.png?h=e22fc174c94765c2a21585f126df3e80"
+              data-src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/891bdd05-ebf2-4feb-9867-896ca9b021d4_car_4x306d2.png?h=8d2b088705d40550fce733dc672f5762"
+              data-srcset="https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/891bdd05-ebf2-4feb-9867-896ca9b021d4_carw_4x3x640.png?h=8b30936c1a6c9683f8217a2a7c42b653 640w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/891bdd05-ebf2-4feb-9867-896ca9b021d4_carw_4x3x1280.png?h=85a671bef9d54761a33796a1cfa5c56b 1280w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/891bdd05-ebf2-4feb-9867-896ca9b021d4_carw_4x3x1366.png?h=074039d9282ea5acf2aad197ab7c2776 1366w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/891bdd05-ebf2-4feb-9867-896ca9b021d4_carw_4x3x1920.png?h=a255988937fa2d89e1f7f94dcf69c999 1920w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/891bdd05-ebf2-4feb-9867-896ca9b021d4_carw_4x3x2560.png?h=dac41835abb8efded80b6639733cb345 2560w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/891bdd05-ebf2-4feb-9867-896ca9b021d4_carw_4x3x5120.png?h=5f5a55a754bc48c2790117136b2c586d 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">Working with audio and gui (C++)</div>
+                            <div class="date">2024</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="c-chatbot.html" data-context="pages" data-identity="id:p65d4cac377205eef481b014bf53c91b53ab63ad8c066765faa89c">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/541ce597-664d-435a-ab3a-bcb24e07fc7d_carw_4x3x320eef.png?h=7f60b3c712ff63abc5417003033cf57c"
+              data-src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/541ce597-664d-435a-ab3a-bcb24e07fc7d_car_4x34fc6.png?h=d12ff34531e9d2211b190fed223be1cd"
+              data-srcset="https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/541ce597-664d-435a-ab3a-bcb24e07fc7d_carw_4x3x640.png?h=d170369afa209cb577c2423090d6f7f7 640w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/541ce597-664d-435a-ab3a-bcb24e07fc7d_carw_4x3x1280.png?h=febe3446cb91cc5401a5df2ae0cde4e7 1280w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/541ce597-664d-435a-ab3a-bcb24e07fc7d_carw_4x3x1366.png?h=6100bda344121558baf920aade57fcd7 1366w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/541ce597-664d-435a-ab3a-bcb24e07fc7d_carw_4x3x1920.png?h=c796c79e5ee922e8a2ca944a206fb5e8 1920w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/541ce597-664d-435a-ab3a-bcb24e07fc7d_carw_4x3x2560.png?h=c0a7ec2412e1e9fc21bfbb34db9e90f7 2560w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/541ce597-664d-435a-ab3a-bcb24e07fc7d_carw_4x3x5120.png?h=a1a0386f422acb8e3201305029bd8093 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">C++ chatbot</div>
+                            <div class="date">2024</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+          </section>
+        <section class="back-to-top" data-hover-hint="backToTop">
+          <a href="#"><span class="arrow">&uarr;</span><span class="preserve-whitespace">Back to Top</span></a>
+        </section>
+        <a class="back-to-top-fixed js-back-to-top back-to-top-fixed-with-panel" data-hover-hint="backToTop" data-hover-hint-placement="top-start" href="#">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
+          <g>
+            <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
+              c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
+              c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
+              c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
+              c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
+              c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
+              c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"/>
+          </g>
+          </svg>
+        </a>
+  </div>
+              <footer class="site-footer" data-hover-hint="footer">
+                <div class="footer-text">
+                  View code samples at my   <a href="https://github.com/rimiavas?tab=repositories">GitHub :) </a>
+                </div>
+              </footer>
+        </main>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  // fix for Safari's back/forward cache
+  window.onpageshow = function(e) {
+    if (e.persisted) { window.location.reload(); }
+  };
+</script>
+  <script type="text/javascript">var __config__ = {"page_id":"p65d4ce73b089f4ba0846a57c70ebe071846b029bcf9fd09fcf63c","theme":{"name":"andreas"},"pageTransition":true,"linkTransition":true,"disableDownload":false,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":true,"color":{"opacity":0.94,"hex":"#fff"}},"cookie_banner":{"enabled":false}};</script>
+  <script type="text/javascript" src="site/translations274d?cb=f55b45a3e8ad93d0a224939951d8339444a0d5cb"></script>
+  <script type="text/javascript" src="dist/js/main274d.js?cb=f55b45a3e8ad93d0a224939951d8339444a0d5cb"></script>
+
+<!-- Mirrored from rvas001.myportfolio.com/paint-brush-program by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:45:17 GMT -->
+</html>
