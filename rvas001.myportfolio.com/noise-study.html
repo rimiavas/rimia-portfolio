@@ -1,0 +1,397 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<!-- Mirrored from rvas001.myportfolio.com/noise-study by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:45:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description"  content="Creative experiments with Perlin noise for generative graphics." />
+      <meta name="twitter:card"  content="summary_large_image" />
+      <meta name="twitter:site"  content="@AdobePortfolio" />
+      <meta  property="og:title" content="Rimia Vas - Noise Study" />
+      <meta  property="og:description" content="Creative experiments with Perlin noise for generative graphics." />
+      <meta  property="og:image" content="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/98881ac9-7266-4a36-83bd-f4840909db31_car_4x37aac.jpg?h=b675c5da299fb2650d9b52f97809d155" />
+      <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAADUExURUxpcU3H2DoAAAABdFJOUwBA5thmAAAADElEQVQI12NgIA0AAAAwAAHHqoWOAAAAAElFTkSuQmCC"  />
+      <link rel="stylesheet" href="dist/css/main.css" type="text/css" />
+      <link rel="stylesheet" href="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/717829a48b5fad64747b7bf2f577ae731734365434a24e.css?h=0e7cd764762ab797f537b40f4d7b6dad" type="text/css" />
+    <link rel="canonical" href="noise-study.html" />
+      <title>Rimia Vas - Noise Study</title>
+    <script type="text/javascript" src="../use.typekit.net/ik/1QUlp7ULineXprS5ToWT-ZRxef5kr9YsDVtSmdoLRVXfe1SJGLGmIKvDFQqawQFL52b3wRgRZRmR52ZKjAjUF2qojAIu529kFQFR5QJk52quZA4cZQwUFgGMJ6sKdAukJ6s1dAoaH6GJX-b2IMMjgkMfH6qJyMIbMs6IJMJ7?cb=f55b45a3e8ad93d0a224939951d8339444a0d5cb" async onload="
+    try {
+      window.Typekit.load();
+    } catch (e) {
+      console.warn('Typekit not loaded.');
+    }
+    "></script>
+</head>
+  <body class="transition-enabled">  <div class='page-background-video page-background-video-with-panel'>
+  </div>
+  <div class="js-responsive-nav">
+    <div class="responsive-nav has-social">
+      <div class="responsive-nav__contents">
+        <div class="close-responsive-click-area js-close-responsive-nav">
+          <div class="close-responsive-button"></div>
+        </div>
+            <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+                <div class="gallery-title"><a href="work.html" >About me</a></div>
+                <div class="gallery-title"><a href="c.html" >C++</a></div>
+                <div class="gallery-title"><a href="uxui-1.html" >UX/UI</a></div>
+                <div class="gallery-title"><a href="javascript.html" >JavaScript</a></div>
+                <div class="gallery-title"><a href="other-languagesprojects.html" >Other languages/projects</a></div>
+      <div class="page-title">
+        <a href="contact.html" >Contact</a>
+      </div>
+            </nav>
+          <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+            <ul>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="site-wrap cfix">
+    <div class="site-container">
+      <div class="site-content e2e-site-content">
+          <header class="site-header js-site-header " data-context="theme.nav" data-hover-hint="nav" data-hover-hint-placement="top-start">
+              <nav class="nav-container" data-hover-hint="nav" data-hover-hint-placement="bottom-start">
+                <div class="gallery-title"><a href="work.html" >About me</a></div>
+                <div class="gallery-title"><a href="c.html" >C++</a></div>
+                <div class="gallery-title"><a href="uxui-1.html" >UX/UI</a></div>
+                <div class="gallery-title"><a href="javascript.html" >JavaScript</a></div>
+                <div class="gallery-title"><a href="other-languagesprojects.html" >Other languages/projects</a></div>
+      <div class="page-title">
+        <a href="contact.html" >Contact</a>
+      </div>
+              </nav>
+              <div class="logo-wrap" data-context="theme.logo.header" data-hover-hint="logo" data-hover-hint-placement="bottom-start">
+                <div class="logo e2e-site-logo-text logo-text  ">
+                    <a href="work.html" class="preserve-whitespace">Rimia Vas</a>
+
+                </div>
+              </div>
+              <div class="social pf-nav-social" data-context="theme.nav" data-hover-hint="navSocialIcons" data-hover-hint-placement="bottom-start">
+                <ul>
+                </ul>
+              </div>
+              <div class="hamburger-click-area js-hamburger">
+                <div class="hamburger">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+                </div>
+              </div>
+          </header>
+        <main>
+  <div class="page-container js-site-wrap" data-context="page.page.container" data-hover-hint="pageContainer">
+    <section class="page standard-modules">
+        <header class="page-header content" data-context="pages" data-identity="id:p65d28fd7609dded8b6336cb137da28c4fa3912be220a1764292eb" data-hover-hint="pageHeader" data-hover-hint-id="p65d28fd7609dded8b6336cb137da28c4fa3912be220a1764292eb">
+            <h1 class="title preserve-whitespace e2e-site-logo-text">Noise Study</h1>
+            <p class="description">Creative experiments with Perlin noise for generative graphics.</p>
+        </header>
+      <div class="page-content js-page-content" data-context="pages" data-identity="id:p65d28fd7609dded8b6336cb137da28c4fa3912be220a1764292eb">
+        <div id="project-canvas" class="js-project-modules modules content">
+          <div id="project-modules">
+              
+              
+              
+              
+              
+              <div class="project-module module text project-module-text align- js-project-module e2e-site-project-module-text">
+  <div class="rich-text js-text-editable module-text"><div>This project uses Perlin noise in p5.js to Generate dynamic ellipse positions. Vary ellipse size based on noise values. Interpolate color with noise for gradual transitions. Creating an organic, flowing visual effect.</div><div><br></div><div>The key logic used include xoff incremented through loop to shift noise over time, noise() fed into, map() to get ellipse y, size, and color, lerpColor() blends two colors based on noise. This maps noise values to visual elements.</div><div><br></div><div>Techniques have I applied include perlin noise functions in p5.js. Mapping noise values to properties. Color interpolation for gradual blends. Animating with noise over time to generate the dynamic effect.</div><div><br></div><div>This project helped me gain experience with: Working with Perlin noise for generative art. Using noise for organic movement and variation. Animating graphics by modifying noise parameters. Creative experimentation with noise mappings</div><div><br></div><div>View Code [<a href="https://github.com/rimiavas/GD2/tree/main/GD2/Noise%2520Study" target="_blank">Link to GitHub</a>]</div></div>
+</div>
+
+              
+              
+              
+              
+              
+              
+              <div class="project-module module video project-module-video js-js-project-module" style="padding-top: px;
+padding-bottom: px;
+  width: 65%;
+">
+    <div class="embed-dimensions" style="max-width: 1920px; max-height: 1080px; margin: 0 auto;">
+    <div class="embed-aspect-ratio" style="padding-bottom: 56.25%; position: relative; height: 0px;">
+        <iframe title="Video Player" class="embed-content" src="https://www-ccv.adobe.io/v1/player/ccv/92IDMDj6moE/embed?bgcolor=%23191919&amp;lazyLoading=true&amp;api_key=BehancePro2View" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
+    </div>
+
+</div>
+
+              
+              
+              
+              
+              
+              
+              
+          </div>
+        </div>
+      </div>
+    </section>
+          <section class="other-projects" data-context="page.page.other_pages" data-hover-hint="otherPages">
+            <div class="title-wrapper">
+              <div class="title-container">
+                  <h3 class="other-projects-title preserve-whitespace">You may also like</h3>
+              </div>
+            </div>
+            <div class="project-covers">
+                  <a class="project-cover js-project-cover-touch hold-space" href="digital-poster.html" data-context="pages" data-identity="id:p65d4e2124d77cf7f6c02fded04ad38274a7ac13ab5a93e2270e75">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/d8baeebc-192a-492d-ab9b-e3cd139383f9_rwc_0x700x1526x1144x32eba2.gif?h=2a8a8f57ab88568342defa437f99e953"
+              data-src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/d8baeebc-192a-492d-ab9b-e3cd139383f9_rwc_0x700x1526x1144x152610bf.gif?h=985d12eca1b91916227265730ab1595c"
+              data-srcset="https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/d8baeebc-192a-492d-ab9b-e3cd139383f9_rwc_0x700x1526x1144x640.gif?h=9e21ac5b9d7dbf263be9ae44b90a6ede 640w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/d8baeebc-192a-492d-ab9b-e3cd139383f9_rwc_0x700x1526x1144x1280.gif?h=b264a61e26c5cfe3c086b57403bd2b09 1280w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/d8baeebc-192a-492d-ab9b-e3cd139383f9_rwc_0x700x1526x1144x1366.gif?h=46d094086612706e828805c70d011014 1366w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/d8baeebc-192a-492d-ab9b-e3cd139383f9_rwc_0x700x1526x1144x1526.gif?h=985d12eca1b91916227265730ab1595c 1920w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/d8baeebc-192a-492d-ab9b-e3cd139383f9_rwc_0x700x1526x1144x1526.gif?h=985d12eca1b91916227265730ab1595c 2560w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/d8baeebc-192a-492d-ab9b-e3cd139383f9_rwc_0x700x1526x1144x1526.gif?h=985d12eca1b91916227265730ab1595c 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">Digital Poster</div>
+                            <div class="date">2024</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="alien-game.html" data-context="pages" data-identity="id:p65d27183147954297e132886415bae0e7be29feb36358d7398da4">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/64526de6-f361-4773-b0f2-846b234c5479_rwc_0x0x2428x1821x327a72.jpg?h=d26d5644b502e5b053961cd7be07388b"
+              data-src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/64526de6-f361-4773-b0f2-846b234c5479_rwc_0x0x2428x1821x24283ae7.jpg?h=9830ea4d06ba028625851880920d3d06"
+              data-srcset="https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/64526de6-f361-4773-b0f2-846b234c5479_rwc_0x0x2428x1821x640.jpg?h=f573d80cbf5c89c18f2f6999885502e6 640w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/64526de6-f361-4773-b0f2-846b234c5479_rwc_0x0x2428x1821x1280.jpg?h=ca504c6bc0981e16fc007697d4db6880 1280w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/64526de6-f361-4773-b0f2-846b234c5479_rwc_0x0x2428x1821x1366.jpg?h=8a61198d6997383ff2cf454786605180 1366w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/64526de6-f361-4773-b0f2-846b234c5479_rwc_0x0x2428x1821x1920.jpg?h=ab0e1373f289606dc374764eaee884d6 1920w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/64526de6-f361-4773-b0f2-846b234c5479_rwc_0x0x2428x1821x2560.jpg?h=7d57b926f25a5b0ec22143156ea96fc1 2560w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/64526de6-f361-4773-b0f2-846b234c5479_rwc_0x0x2428x1821x2428.jpg?h=9830ea4d06ba028625851880920d3d06 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">Alien Game</div>
+                            <div class="date">2024</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="modulo-and-phasing.html" data-context="pages" data-identity="id:p65d27c2a597319b18667f3dd04398f04fb0af844001d7a87a4f61">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/ddd76352-67fe-4796-ab33-18721da049bd_carw_4x3x3252a0.jpg?h=1189e00494a95baf748482154b8a8c20"
+              data-src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/ddd76352-67fe-4796-ab33-18721da049bd_car_4x3b3cb.jpg?h=924991ea1820d9d0776d1bd2d1c2480e"
+              data-srcset="https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/ddd76352-67fe-4796-ab33-18721da049bd_carw_4x3x640.jpg?h=27a3f9b0e907fc6a16b0b61c1de4c7d0 640w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/ddd76352-67fe-4796-ab33-18721da049bd_carw_4x3x1280.jpg?h=f10737b624b911929197edf3229f7418 1280w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/ddd76352-67fe-4796-ab33-18721da049bd_carw_4x3x1366.jpg?h=4c28cce0d183646e58d4a67ac1257794 1366w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/ddd76352-67fe-4796-ab33-18721da049bd_carw_4x3x1920.jpg?h=2a8fbc01adf750792755acec20fc85ab 1920w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/ddd76352-67fe-4796-ab33-18721da049bd_carw_4x3x2560.jpg?h=6f3cc7de2a3678a16449a216552594a1 2560w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/ddd76352-67fe-4796-ab33-18721da049bd_carw_4x3x5120.jpg?h=44eb380fe266a14e995fad45a4483580 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">Modulo and Phasing</div>
+                            <div class="date">2024</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="recursive-pattern.html" data-context="pages" data-identity="id:p65d4bc84f3d7fb1f95148b1d9e420b401c6dd2af2bc574e2872a8">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/7c4b9c48-a5ce-4d29-a890-c71929c8d425_carw_4x3x321dfd.jpg?h=53304bb04670346da447c2f3f82d4d59"
+              data-src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/7c4b9c48-a5ce-4d29-a890-c71929c8d425_car_4x307f8.jpg?h=70f034258ccf1b1a8f7542c643b4d8a1"
+              data-srcset="https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/7c4b9c48-a5ce-4d29-a890-c71929c8d425_carw_4x3x640.jpg?h=de67cbdd1a763a4f3c6827ca8bd6649e 640w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/7c4b9c48-a5ce-4d29-a890-c71929c8d425_carw_4x3x1280.jpg?h=35a41732b552be029af2ab75a1b21e4c 1280w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/7c4b9c48-a5ce-4d29-a890-c71929c8d425_carw_4x3x1366.jpg?h=75bc52f6312c13083bed5a13b6864096 1366w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/7c4b9c48-a5ce-4d29-a890-c71929c8d425_carw_4x3x1920.jpg?h=9e43770f22f30059a73edf60c75ed56a 1920w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/7c4b9c48-a5ce-4d29-a890-c71929c8d425_carw_4x3x2560.jpg?h=5076e6255f189d30e0fcd9f049e8dd4d 2560w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/7c4b9c48-a5ce-4d29-a890-c71929c8d425_carw_4x3x5120.jpg?h=8ae84f45fc4ef37e7123037eec048c05 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">Recursive Pattern</div>
+                            <div class="date">2024</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="sinusoidal.html" data-context="pages" data-identity="id:p65d27e7c57739adbe630207ec5db2cd4c5caf5782bcc651adde72">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/fee62679-dc4d-4b0b-8573-7fbdcdeeac3f_carw_4x3x32a481.jpg?h=bb532150c62e04a6b7c360d3427d2c67"
+              data-src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/fee62679-dc4d-4b0b-8573-7fbdcdeeac3f_car_4x3843a.jpg?h=2ccf77e1412d04e9389461df8f3151e1"
+              data-srcset="https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/fee62679-dc4d-4b0b-8573-7fbdcdeeac3f_carw_4x3x640.jpg?h=3eecd6bc9299dd436575892ec61b2f2e 640w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/fee62679-dc4d-4b0b-8573-7fbdcdeeac3f_carw_4x3x1280.jpg?h=b48fd5e6c7a48efc9902f91844ccca4f 1280w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/fee62679-dc4d-4b0b-8573-7fbdcdeeac3f_carw_4x3x1366.jpg?h=b40743ebe7cbe4cf2bd35bb66482c971 1366w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/fee62679-dc4d-4b0b-8573-7fbdcdeeac3f_carw_4x3x1920.jpg?h=215006b0454e36bec503320c31e58525 1920w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/fee62679-dc4d-4b0b-8573-7fbdcdeeac3f_carw_4x3x2560.jpg?h=624e3abc9b3be093dccb38e3a61b5a15 2560w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/fee62679-dc4d-4b0b-8573-7fbdcdeeac3f_carw_4x3x5120.jpg?h=0aea6743217203a719c6a0df97a30c0a 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">Sinusoidal</div>
+                            <div class="date">2024</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="crack-it-forum-website.html" data-context="pages" data-identity="id:p65d4d5902e4b06bca590c4316917477279a82cda85672615a21eb">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/831c4c24-6655-42d8-8fb2-4567b5af8eb7_rwc_398x0x1069x802x32e608.png?h=ce8f0c0f826e72d7c862de9bf22425b9"
+              data-src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/831c4c24-6655-42d8-8fb2-4567b5af8eb7_rwc_398x0x1069x802x1069e42c.png?h=8d1b54e6f84690375137398a6ccfc43b"
+              data-srcset="https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/831c4c24-6655-42d8-8fb2-4567b5af8eb7_rwc_398x0x1069x802x640.png?h=d2f743f2a2d2093c56ce01efdcef0c07 640w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/831c4c24-6655-42d8-8fb2-4567b5af8eb7_rwc_398x0x1069x802x1280.png?h=797e37ba8e18c5c7660f54c9b52e4d60 1280w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/831c4c24-6655-42d8-8fb2-4567b5af8eb7_rwc_398x0x1069x802x1366.png?h=190ac157fea5a984ab13327b02d570f1 1366w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/831c4c24-6655-42d8-8fb2-4567b5af8eb7_rwc_398x0x1069x802x1069.png?h=8d1b54e6f84690375137398a6ccfc43b 1920w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/831c4c24-6655-42d8-8fb2-4567b5af8eb7_rwc_398x0x1069x802x1069.png?h=8d1b54e6f84690375137398a6ccfc43b 2560w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/831c4c24-6655-42d8-8fb2-4567b5af8eb7_rwc_398x0x1069x802x1069.png?h=8d1b54e6f84690375137398a6ccfc43b 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">Crack it! (forum website)</div>
+                            <div class="date">2024</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="stochastic-drawing.html" data-context="pages" data-identity="id:p65d284fb5a964f137ca137959f96b88856bbf656025181b1f3527">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/767ef9e7-720e-47eb-abd4-43d04155840a_carw_4x3x32073e.jpg?h=9653546cfccbea82ea5343ad7fbc11dd"
+              data-src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/767ef9e7-720e-47eb-abd4-43d04155840a_car_4x37260.jpg?h=9523b2d6eacaa4fa42d6045254c2ca08"
+              data-srcset="https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/767ef9e7-720e-47eb-abd4-43d04155840a_carw_4x3x640.jpg?h=6fee8a2a70c581fa9488357213c9f6d7 640w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/767ef9e7-720e-47eb-abd4-43d04155840a_carw_4x3x1280.jpg?h=24d448e3d8f228a1b24b9833828bd847 1280w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/767ef9e7-720e-47eb-abd4-43d04155840a_carw_4x3x1366.jpg?h=0032f0fb9a06a85d63aa33f259aa9a73 1366w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/767ef9e7-720e-47eb-abd4-43d04155840a_carw_4x3x1920.jpg?h=75cdc1ba1a6b0e2f07ee520da74912e8 1920w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/767ef9e7-720e-47eb-abd4-43d04155840a_carw_4x3x2560.jpg?h=33cd931e40dc250dd0ffeeff90dc2a9d 2560w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/767ef9e7-720e-47eb-abd4-43d04155840a_carw_4x3x5120.jpg?h=39114866e3dc6ed0d6ff63a8979f560d 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">Stochastic Drawing</div>
+                            <div class="date">2024</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="autonomous-agents.html" data-context="pages" data-identity="id:p65d28e124f8321c56eafd829de898c4bfc9ffe5b16ac1968db424">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/57278255-10e3-4291-b284-da814528f559_carw_4x3x322f02.jpg?h=e750fcc24c35a6a1b664bedffb08067c"
+              data-src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/57278255-10e3-4291-b284-da814528f559_car_4x352dd.jpg?h=808e0bd45e1c7925bbb379a2f2acd679"
+              data-srcset="https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/57278255-10e3-4291-b284-da814528f559_carw_4x3x640.jpg?h=c8215ab1d4ef0e5bdf53a0f489a23123 640w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/57278255-10e3-4291-b284-da814528f559_carw_4x3x1280.jpg?h=1d308abd14255e744e48abec283835e5 1280w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/57278255-10e3-4291-b284-da814528f559_carw_4x3x1366.jpg?h=c72edf102259656fc17a7920b86480ca 1366w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/57278255-10e3-4291-b284-da814528f559_carw_4x3x1920.jpg?h=f609248f8c05106017df76badb1512c3 1920w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/57278255-10e3-4291-b284-da814528f559_carw_4x3x2560.jpg?h=b99575570fcb815f4a9ee16af21ff811 2560w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/57278255-10e3-4291-b284-da814528f559_carw_4x3x5120.jpg?h=a3dc6207149c4472b1700c37371f54c6 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">Autonomous Agents</div>
+                            <div class="date">2024</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                  <a class="project-cover js-project-cover-touch hold-space" href="medusa-wants-takeaway.html" data-context="pages" data-identity="id:p65d2754635f00cce398e2020a75e1d85fcc803510e4c16cd4e17d">
+                      <div class="cover-image-wrap">
+                        <div class="cover-image">
+                            <div class="cover cover-normal">
+
+            <img
+              class="cover__img js-lazy"
+              src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/be49df7e-79ca-4b0b-8cdb-b1a18394d6e5_carw_4x3x3282fa.png?h=6bc551e1ae6382d66467a23ebc7f365b"
+              data-src="../cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/be49df7e-79ca-4b0b-8cdb-b1a18394d6e5_car_4x3a47e.png?h=a6788a9674eecd143f9ccc80a00fd8c0"
+              data-srcset="https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/be49df7e-79ca-4b0b-8cdb-b1a18394d6e5_carw_4x3x640.png?h=a564d1c0bd9b4d2cba2b1081c960de37 640w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/be49df7e-79ca-4b0b-8cdb-b1a18394d6e5_carw_4x3x1280.png?h=1c8bcaa6fb6fe1d14d20fec49674f011 1280w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/be49df7e-79ca-4b0b-8cdb-b1a18394d6e5_carw_4x3x1366.png?h=1dc0883773af5a56cdc23b14eb074a80 1366w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/be49df7e-79ca-4b0b-8cdb-b1a18394d6e5_carw_4x3x1920.png?h=43ed818e99e79239f5fbfd0a3be5604e 1920w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/be49df7e-79ca-4b0b-8cdb-b1a18394d6e5_carw_4x3x2560.png?h=17e8bd86d403d832d9bed07e279c3bd4 2560w, https://cdn.myportfolio.com/d3ec2f36-33a1-4fff-929d-9a88aa3914e2/be49df7e-79ca-4b0b-8cdb-b1a18394d6e5_carw_4x3x5120.png?h=4a807fa5c19fc8ee4e5254b01fce232a 5120w"
+              data-sizes="(max-width: 540px) 100vw, (max-width: 768px) 50vw, 100vw"
+            >
+                                      </div>
+                        </div>
+                      </div>
+                    <div class="details-wrap">
+                      <div class="details">
+                        <div class="details-inner">
+                            <div class="title preserve-whitespace">Medusa wants takeaway</div>
+                            <div class="date">2024</div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+          </section>
+        <section class="back-to-top" data-hover-hint="backToTop">
+          <a href="#"><span class="arrow">&uarr;</span><span class="preserve-whitespace">Back to Top</span></a>
+        </section>
+        <a class="back-to-top-fixed js-back-to-top back-to-top-fixed-with-panel" data-hover-hint="backToTop" data-hover-hint-placement="top-start" href="#">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+           viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve" class="icon icon-back-to-top">
+          <g>
+            <path d="M13.8,1.3L21.6,9c0.1,0.1,0.1,0.3,0.2,0.4c0.1,0.1,0.1,0.3,0.1,0.4s0,0.3-0.1,0.4c-0.1,0.1-0.1,0.3-0.3,0.4
+              c-0.1,0.1-0.2,0.2-0.4,0.3c-0.2,0.1-0.3,0.1-0.4,0.1c-0.1,0-0.3,0-0.4-0.1c-0.2-0.1-0.3-0.2-0.4-0.3L14.2,5l0,19.1
+              c0,0.2-0.1,0.3-0.1,0.5c0,0.1-0.1,0.3-0.3,0.4c-0.1,0.1-0.2,0.2-0.4,0.3c-0.1,0.1-0.3,0.1-0.5,0.1c-0.1,0-0.3,0-0.4-0.1
+              c-0.1-0.1-0.3-0.1-0.4-0.3c-0.1-0.1-0.2-0.2-0.3-0.4c-0.1-0.1-0.1-0.3-0.1-0.5l0-19.1l-5.7,5.7C6,10.8,5.8,10.9,5.7,11
+              c-0.1,0.1-0.3,0.1-0.4,0.1c-0.2,0-0.3,0-0.4-0.1c-0.1-0.1-0.3-0.2-0.4-0.3c-0.1-0.1-0.1-0.2-0.2-0.4C4.1,10.2,4,10.1,4.1,9.9
+              c0-0.1,0-0.3,0.1-0.4c0-0.1,0.1-0.3,0.3-0.4l7.7-7.8c0.1,0,0.2-0.1,0.2-0.1c0,0,0.1-0.1,0.2-0.1c0.1,0,0.2,0,0.2-0.1
+              c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0c0.1,0,0.2,0,0.2,0.1c0.1,0,0.1,0.1,0.2,0.1C13.7,1.2,13.8,1.2,13.8,1.3z"/>
+          </g>
+          </svg>
+        </a>
+  </div>
+              <footer class="site-footer" data-hover-hint="footer">
+                <div class="footer-text">
+                  View code samples at my   <a href="https://github.com/rimiavas?tab=repositories">GitHub :) </a>
+                </div>
+              </footer>
+        </main>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  // fix for Safari's back/forward cache
+  window.onpageshow = function(e) {
+    if (e.persisted) { window.location.reload(); }
+  };
+</script>
+  <script type="text/javascript">var __config__ = {"page_id":"p65d28fd7609dded8b6336cb137da28c4fa3912be220a1764292eb","theme":{"name":"andreas"},"pageTransition":true,"linkTransition":true,"disableDownload":false,"localizedValidationMessages":{"required":"This field is required","Email":"This field must be a valid email address"},"lightbox":{"enabled":true,"color":{"opacity":0.94,"hex":"#fff"}},"cookie_banner":{"enabled":false}};</script>
+  <script type="text/javascript" src="site/translations274d?cb=f55b45a3e8ad93d0a224939951d8339444a0d5cb"></script>
+  <script type="text/javascript" src="dist/js/main274d.js?cb=f55b45a3e8ad93d0a224939951d8339444a0d5cb"></script>
+
+<!-- Mirrored from rvas001.myportfolio.com/noise-study by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 16 Dec 2024 17:45:23 GMT -->
+</html>
